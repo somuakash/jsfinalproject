@@ -1,0 +1,473 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+    font-family: "Open Sans", sans-serif;
+}
+.edyodalogo{
+    bottom: 30px;
+    right: 100px;
+    z-index: 10;
+    position: fixed;
+}
+/* Navbar style ---------------------- */
+.navbar,
+.headingsLinks,
+#count-wrapper,
+.order-count-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar{
+    width: 100%;
+    box-shadow: 0 2px 5px #ccc;
+    background-color: white;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 16px 8%;
+  }
+  
+#logo {
+    cursor: pointer;
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-right: 16px;
+    transition: all 0.2s ease-in-out;
+    border: none;
+    background-color: white;
+  }
+#logo span {
+    font-weight: 800;
+}
+#logo:hover span,
+.sectionTitle :hover {
+  color: #009688;
+  transform: scale(1.1);
+}
+.sectionTitle  {
+    border: none;
+    transition: all 0.2s ease;
+    background-color: white;
+    margin-left: 32px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+}
+.sectionTitle a{
+    text-decoration: none;
+    color: black;
+}
+#Clothing, #Accessories{
+    text-decoration: none;
+    color: black;
+}
+#input-wrapper{
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+}
+#input-wrapper i {
+    position: absolute;
+    color: #999;
+    font-size: 18px;
+    top: 50%;
+    left: 18px;
+    transform: translateY(-50%);
+}
+#input-wrapper input {
+    width: 100%;
+    border: 1px solid rgb(245, 242, 242);
+    background-color: rgb(245, 242, 242);
+    box-sizing: border-box;
+    padding: 10px 24px 8px 48px;
+    color: black;
+}
+#count-wrapper {
+    display: inline-flex;
+    justify-content: end;
+    align-items: center;
+}
+.order-wrapper {
+    /* width: 100px */
+    position: relative;
+    margin-right: 32px;
+}
+.orders-count {
+    width: 18px;
+    height: 18px;
+    font-size: 12px;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+    font-weight: 600;
+    background-color: #009688;
+    color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: -12px;
+    right: -12px;
+}
+.order-wrapper i {
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* #profile-back-screen {
+    
+   
+  }
+  
+  #profile-pic {
+    
+  } */
+
+  /* crousel style ----------------------------- */
+
+  #carousel-wrapper {
+      width: 80%;
+      margin: 0 auto;
+      margin-top: 100px;
+      height: 330px;
+  }
+  #item img {
+      width: 100%;
+    }
+/* all card page style ---------------------------------*/
+
+#indexWrapper{
+    margin: 10px 0px 10px 0px ;
+
+}
+.headding{
+    font-size: 28px;
+    font-weight: 600;
+    margin: 20px 0 0px 70px;
+}
+.cardContainer{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 0 5%;
+
+}
+.card{
+    width: 15%;
+    min-width: 200px;
+    height: 420px;
+    margin: 30px 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+.card:hover{
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.9);
+    /* transform: scale(1.02); */
+}
+.image{
+  width: 100%;
+}
+.content-wrapper{
+  padding: 10px 15px;
+}
+.item-name{
+    text-align: left;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    color: rgb(27, 25, 25);
+}
+.brand-name{
+    margin-top: 10px;
+    text-align: left;
+    font-size: 12px;
+    color: rgb(110, 110, 110);
+}
+.price-tag{
+  margin-top: 10px;
+  text-align: left;
+  font-size: 15px;
+  letter-spacing: 2px;
+  color: #009688;
+}
+
+/* product page style--------------- */
+#wrapper{
+    height: 100vh;
+    width: 90%;
+    margin: 40px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    margin-top: 98px;
+      
+}
+.left-section{
+    width: 30%;
+    height: 70%;
+    margin-inline: 30px;
+    
+}
+.right-section{
+
+    width: 53%;
+    height: 95%;
+    margin-inline: 20px;
+    margin-top: 30px;
+    
+}
+.left-image{
+    width: 100%;
+    height: 100%;
+}
+.name{
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+.brand, .price, .disc, .preview{
+  margin-top: 20px;
+  font-weight: 200;
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: rgb(27, 25, 25);
+}
+.price span{
+  color: #009688;
+  font-weight: bold;
+}
+.prdctDisc{
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: 300;
+  color: #86939e;
+  height: 70px;
+  overflow:auto;
+}
+.imgContainer{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 20px;
+  
+}
+#img-container img{
+  margin: 5px;
+  width: 15%;
+  height: 30%;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 6px;
+  /* border: none; */
+  /* border: 2px solid #009688 */
+}
+
+.preImageBorder{
+  border: 2px solid #009688
+
+}
+
+
+.cart-btn{
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  padding: 10px 20px;
+  letter-spacing: 2px;
+  background-color: #009688;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+.cart-btn:hover{
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+}
+
+/* checkOut page style ------------------------------------------------------------ */
+
+.cartWrapper{
+  margin-top: 100px;
+  margin-bottom: 50px;
+  width: 100%;
+}
+.marginwrapper{
+  width: 85%;
+  margin: 0 auto;
+}
+.checkout{
+  font-size: 36px;
+  font-weight: 500;
+}
+.totalcartcount{
+  margin-top: 50px;
+  font-size: 24px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.8);
+}
+#cartwrapper-2{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+#cartcards{
+  width: 50%;
+  height: fit-content;
+  
+  
+}
+.totalPriceWrapper{
+  width: 40%;
+  height: fit-content;
+  box-shadow: 0 2px 5px #ccc;
+  border-radius: 5px;
+  padding: 16px;
+}
+.totalAmount{
+  font-size: 24px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.8);
+}
+.totalPrice{
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.8);
+}
+#totalAmount{
+  font-size: 24px;
+  font-weight: 700;
+  color: black;
+}
+#Place-order-btn{
+  background-color: #009688;
+  font-size: 18px;
+  border: 0;
+  cursor: pointer;
+  outline: none;
+  padding: 18px 36px;
+  border-radius: 6px;
+  margin-top: 36px;
+  font-weight: 600;
+  color: white;
+}
+.checkout-card{
+  width: 100%;
+  display: flex;
+  box-shadow: 0 2px 5px #ccc;
+  border-radius: 5px;
+  background-color: white;
+  padding: 10px;
+  margin-bottom: 16px;
+}
+.card-left{
+  width: 20%;
+  margin: 10px;
+}
+.card-imgage{
+  width: 100%;
+  border-radius: 5px;
+}
+.card-right{
+  width: 70%;
+  margin: 10px;
+}
+.card-item-name{
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-bottom: 5px
+
+}
+.card-quantity{
+  margin-bottom: 5px;
+  
+}
+
+/* order page style --------------------------------------------------------- */
+
+.order-page-Wrapper{
+  margin-top: 40px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.order-page-Wrapper img{
+  width: 200px;
+}
+.order-page-Wrapper h1 {
+  margin-bottom: 10px;
+}
+.order-page-Wrapper h3{
+  margin-bottom: 10px;
+}
+.order-page-Wrapper p{
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.order-page-Wrapper a{
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 9px 14px;
+  background-color: #009688;
+  margin-top: 10px;
+  border-radius: 5px;
+
+}
+
+
+  /* Footer style---------------------------------------------------------- */
+footer {
+    width: 100%;
+    background-color: #1c1b1e;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 4% 8%;
+}
+  
+footer div {
+    padding-right: 60px;
+}
+  
+footer div p {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 16px;
+    color: white;
+    opacity: 0.9;
+    letter-spacing: 1px;
+}
+footer div a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    margin-top: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 14px;
+    opacity: 0.8;
+}
